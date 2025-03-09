@@ -44,6 +44,13 @@ header > nav {
   padding: 10px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* arreglos generales */
 .logo {
   height: 200px;
@@ -74,12 +81,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.redes p {
-  margin-left: 10px;
-}
 .redes .media {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
 /* HOME */
@@ -330,7 +334,7 @@ li {
 }
 
 /* MEDIA QUERIES-RESPONSIVE */
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 550px) {
   /* HOME */
   h1 {
     font-size: 25px;
@@ -353,7 +357,7 @@ li {
   .caja-grande {
     display: flex;
     flex-direction: column;
-    width: 340px;
+    width: 280px;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -370,13 +374,14 @@ li {
     height: 300px;
   }
   footer {
-    font-size: 11px;
+    font-size: 10px;
   }
   .media {
     margin-top: 5px;
   }
   .redes {
     flex-wrap: wrap;
+    gap: 5px;
   }
   /* CONTACTO */
   .mapa {
@@ -397,7 +402,7 @@ li {
     height: 170px;
   }
 }
-@media (min-width: 601px) and (max-width: 800px) {
+@media (min-width: 551px) and (max-width: 750px) {
   /* HOME */
   nav {
     display: flex;
@@ -411,12 +416,13 @@ li {
   .caja-grande {
     display: flex;
     flex-wrap: wrap;
-    width: 450px;
+    width: 430px;
     justify-content: center;
     align-items: center;
   }
   .img-video-img {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     align-items: center;
@@ -429,6 +435,7 @@ li {
   }
   .redes {
     flex-wrap: wrap;
+    gap: 5px;
   }
   /* CONTACTO */
   .mapa {
@@ -446,7 +453,7 @@ li {
     height: 250px;
   }
 }
-@media (min-width: 801px) and (max-width: 1045px) {
+@media (min-width: 751px) and (max-width: 1100px) {
   /* HOME */
   .logo {
     width: 160px;
@@ -463,6 +470,7 @@ li {
     flex-direction: column;
     width: 650px;
     justify-content: center;
+    align-items: center;
   }
   footer {
     font-size: 14px;
